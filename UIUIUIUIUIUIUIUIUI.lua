@@ -93,7 +93,7 @@ end
 
 local Library = Instance.new("ScreenGui")
 Library.Name = "Library"
-Library.Parent = game.viceui
+Library.Parent = game.CoreGui
 Library.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 local uitoggled = false
