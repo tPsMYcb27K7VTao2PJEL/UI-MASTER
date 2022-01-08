@@ -92,7 +92,7 @@ local function MakeDraggable(topbarobject, object)
 end
 
 local Library = Instance.new("ScreenGui")
-Library.Name = "Library"
+Library.Name = "vicehubui"
 Library.Parent = game.CoreGui
 Library.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
