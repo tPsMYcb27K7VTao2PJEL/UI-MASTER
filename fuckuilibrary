@@ -1421,7 +1421,9 @@ function VLib:Window(textgame)
 						end
 						end
 				
-				end
+					end
+			function ContainerItems:newstuff()
+			    
 ImageLabel.Parent = Circle
 ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 ImageLabel.Size = UDim2.new(0, 38, 0, 38)
@@ -1459,6 +1461,8 @@ PlayerName.Font = Enum.Font.Gotham
 PlayerName.Text = ""
 PlayerName.TextColor3 = Color3.fromRGB(255, 255, 255)
 PlayerName.TextSize = 14.000
+
+end
 
 local function IDAAYFE_fake_script() -- MainTitle.mainrgb 
 	local script = Instance.new('LocalScript', MainTitle)
