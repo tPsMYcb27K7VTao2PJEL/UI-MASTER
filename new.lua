@@ -1342,7 +1342,7 @@ function VLib:Window(textgame)
 
 			Label.Name = "Label"
 			Label.Parent = Container
-			Label.BackgroundColor3 = Color3.fromRGB(255, 33, 150)
+			Label.BackgroundColor3 = Color3.fromRGB(32, 33, 37)
 			Label.Size = UDim2.new(0, 403, 0, 28)
 			Label.AutoButtonColor = false
 			Label.Font = Enum.Font.Gotham
@@ -1418,9 +1418,10 @@ function VLib:Window(textgame)
 							pcall(callback, TextBox.Text)
 							if disapper then
 								TextBox.Text = ""
-							end
-							end
-
+						end
+						end
+				
+				end
 ImageLabel.Parent = Circle
 ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 ImageLabel.Size = UDim2.new(0, 38, 0, 38)
@@ -1506,14 +1507,18 @@ local function NYHOP_fake_script() -- PlayerName.playernamergb
 end
 coroutine.wrap(NYHOP_fake_script)()
 							end
-				end
+			
 	
-			)
-
+			
+)
 			Container.CanvasSize = UDim2.new(0, 0, 0, ContainerLayout.AbsoluteContentSize.Y)
-		end
+	
+		
+
 		return ContainerItems
-	end
+		end
 	return Tabs
+		end
 end
+
 return VLib
