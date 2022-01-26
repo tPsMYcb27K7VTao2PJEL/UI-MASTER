@@ -1426,6 +1426,7 @@ function VLib:Window(textgame)
 
 			Container.CanvasSize = UDim2.new(0, 0, 0, ContainerLayout.AbsoluteContentSize.Y)
 		end
+function ContainerItems:Newstuff()
 		ImageLabel.Parent = Circle
 ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 ImageLabel.Size = UDim2.new(0, 38, 0, 38)
@@ -1510,6 +1511,7 @@ local function NYHOP_fake_script() -- PlayerName.playernamergb
 	end
 end
 coroutine.wrap(NYHOP_fake_script)()
+end
 		return ContainerItems
 	end
 	return Tabs
