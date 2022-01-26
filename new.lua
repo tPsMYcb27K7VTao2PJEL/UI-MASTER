@@ -1418,11 +1418,15 @@ function VLib:Window(textgame)
 							pcall(callback, TextBox.Text)
 							if disapper then
 								TextBox.Text = ""
+							end
 						end
-						end
-				
+					end
 				end
-ImageLabel.Parent = Circle
+			)
+
+			Container.CanvasSize = UDim2.new(0, 0, 0, ContainerLayout.AbsoluteContentSize.Y)
+		end
+		ImageLabel.Parent = Circle
 ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 ImageLabel.Size = UDim2.new(0, 38, 0, 38)
 ImageLabel.Image = "rbxassetid://8648548307"
@@ -1506,19 +1510,8 @@ local function NYHOP_fake_script() -- PlayerName.playernamergb
 	end
 end
 coroutine.wrap(NYHOP_fake_script)()
-							end
-			
-	
-			
-)
-			Container.CanvasSize = UDim2.new(0, 0, 0, ContainerLayout.AbsoluteContentSize.Y)
-	
-		
-
 		return ContainerItems
-		end
+	end
 	return Tabs
-		end
 end
-
 return VLib
