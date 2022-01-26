@@ -1419,7 +1419,7 @@ function VLib:Window(textgame)
 							if disapper then
 								TextBox.Text = ""
 							end
-							
+							end
 
 ImageLabel.Parent = Circle
 ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -1506,8 +1506,8 @@ local function NYHOP_fake_script() -- PlayerName.playernamergb
 end
 coroutine.wrap(NYHOP_fake_script)()
 							end
-						end
-					end
+				end
+	
 			)
 
 			Container.CanvasSize = UDim2.new(0, 0, 0, ContainerLayout.AbsoluteContentSize.Y)
